@@ -2,9 +2,10 @@ const testStr = ['a', 'b', 'c'];
 const testArr = [1, 2, 3];
 
 function zipList(list1, list2) {
-  const sum = [];
+  let sum = [];
   for (let i = 0; i < list1.length; i++) {
-    sum.push(list1[i], list2[i]);
+    sum += list1[i];
+    sum += list2[i];
   }
   return sum;
 }
